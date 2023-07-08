@@ -95,9 +95,10 @@ input {
 
 .submit-btn {
   height: 25px;
-  background-color: #74dc2e;
+  color: #74dc2e;
 }
 .cards {
+  display: grid;
   padding: 0 25px;
   position: fixed;
   overflow-y: scroll;

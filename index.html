@@ -59,21 +59,28 @@
             placeholder="The answer is..."
             autocomplete="off"
           />
-          <button type="button" class="submit-btn btn"><div>Add</div></button>
+          <button type="submit" class="submit-btn btn">
+            <div class="flex">
+              <img src="./images/add-file.svg" alt="add file" />
+              <div>Add</div>
+            </div>
+          </button>
         </form>
       </div>
-      <div class="cards" aria-hidden="false">
-        <div class="card">
-          <div class="card-id">1-</div>
-          <div class="question">gslakalskja</div>
-          <div class="answer">asdmasdasd</div>
-          <button type="button" class="btn delete-btn">
-            <img src="./images/eraser.svg" alt="delete button" />
-          </button>
-          <button type="button" class="btn edit-btn">
-            <img src="./images/pencil.svg" alt="edit button" />
-          </button>
-        </div>
+      <div class="cards-part">
+        <!-- <div class="cards" aria-hidden="false">
+          <div class="card">
+            <div class="card-id"><span id="card-id-number">1</span>-</div>
+            <div class="question">gslakalskja</div>
+            <div class="answer">asdmasdasd</div>
+            <button type="button" class="btn edit-btn">
+              <img src="./images/pencil.svg" alt="edit button" />
+            </button>
+            <button type="button" class="btn delete-btn">
+              <img src="./images/eraser.svg" alt="delete button" />
+            </button>
+          </div>
+        </div> -->
       </div>
     </div>
     <script src="./script/script.js"></script>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/typography.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Flashcard</title>
+  </head>
+  <body>
+    <div class="notebook">
+      <div class="red-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="notebook-content">
+      <div class="title">
+        <h5 class="date flex">
+          Date:
+          <p id="current-date">...</p>
+        </h5>
+        <h5 class="subject flex">
+          Subject:
+          <p>Flashcards</p>
+        </h5>
+      </div>
+      <div class="qa-input">
+        <form class="qa-input-form">
+          <input
+            type="text"
+            id="question-input"
+            placeholder="Write your question"
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="answer-input"
+            placeholder="The answer is..."
+            autocomplete="off"
+          />
+          <button type="button" class="submit-btn btn"><div>Add</div></button>
+        </form>
+      </div>
+      <div class="cards" aria-hidden="false">
+        <div class="card">
+          <div class="card-id">1-</div>
+          <div class="question">gslakalskja</div>
+          <div class="answer">asdmasdasd</div>
+          <button type="button" class="btn delete-btn">
+            <img src="./images/eraser.svg" alt="delete button" />
+          </button>
+          <button type="button" class="btn edit-btn">
+            <img src="./images/pencil.svg" alt="edit button" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./script/script.js"></script>
+  </body>
+</html>

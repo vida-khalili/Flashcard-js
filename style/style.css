@@ -1,0 +1,137 @@
+body {
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+}
+
+p {
+  color: navy;
+  font-weight: bold;
+  font-size: 28px;
+  font-family: "Nanum Pen Script", cursive;
+}
+.flex {
+  gap: 4px;
+  display: flex;
+  align-items: center;
+}
+.notebook {
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: grid;
+  min-height: 800px;
+  position: absolute;
+  grid-template-rows: repeat(auto-fit, 50px);
+}
+
+.red-line {
+  top: 0;
+  left: 50px;
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  border-left: 2px solid #cc3433;
+  border-right: 2px solid #cc3433;
+}
+
+.horizontal-line {
+  left: 0;
+  top: 50px;
+  width: 100%;
+  position: relative;
+  border-bottom: 1px solid gray;
+}
+
+.notebook-content {
+  top: 22px;
+  width: 100%;
+  position: absolute;
+  padding: 40px 40px 20px 70px;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.qa-input {
+  margin-top: 28px;
+}
+.qa-input-form {
+  display: grid;
+  grid-template-columns: 1fr 0.75fr 100px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  padding: 0 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 32px;
+  background-color: transparent;
+}
+
+.btn {
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  font-weight: 600;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover * {
+  transform: scale(1.1);
+}
+
+.submit-btn {
+  height: 25px;
+  background-color: #74dc2e;
+}
+.cards {
+  padding: 0 25px;
+  position: fixed;
+  overflow-y: scroll;
+  top: 158px;
+  right: 0;
+  bottom: 0;
+  left: 80px;
+  margin-top: 64px;
+}
+[aria-hidden="true"] {
+  display: none;
+}
+
+[aria-hidden="false"] {
+  display: block;
+}
+.card {
+  height: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  /* margin-bottom: 24px; */
+  display: grid;
+  grid-template-columns: 25px 1fr 0.75fr 50px 50px;
+  align-items: baseline;
+}
+.card-id {
+  font-weight: 700;
+  color: red;
+}
+.question {
+  padding: 0 16px;
+}
+
+.btn img {
+  height: 25px;
+  width: 25px;
+}

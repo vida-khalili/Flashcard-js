@@ -19,7 +19,7 @@ p {
   width: 100%;
   height: auto;
   display: grid;
-  min-height: 800px;
+  min-height: 900px;
   position: absolute;
   grid-template-rows: repeat(auto-fit, 50px);
 }
@@ -58,7 +58,7 @@ p {
 }
 
 .qa-input {
-  margin-top: 28px;
+  margin-top: 27px;
 }
 .qa-input-form {
   display: grid;
@@ -115,28 +115,24 @@ input {
   height: 15px;
 }
 .cards {
-  display: grid;
+  display: block;
+  height: 448px;
   padding: 0 25px;
   position: fixed;
-  overflow-y: scroll;
+  overflow-y: auto;
   top: 158px;
   right: 0;
   bottom: 0;
   left: 80px;
   margin-top: 64px;
 }
-[aria-hidden="true"] {
-  display: none;
-}
 
-[aria-hidden="false"] {
-  display: block;
-}
 .card {
   height: 50px;
   font-size: 18px;
   font-weight: 500;
   /* margin-bottom: 24px; */
+  gap: 8px;
   display: grid;
   grid-template-columns: 25px 1fr 0.75fr 50px 50px;
   align-items: baseline;
@@ -171,4 +167,20 @@ input {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.author {
+  position: absolute;
+  bottom: 46px;
+  left: 70px;
+  font-size: 14px;
+}
+.author a {
+  color: blue;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.author a:hover {
+  border-bottom: 2px solid blue;
 }

@@ -60,7 +60,7 @@ const emptyForm = () => {
 const generateCard = () => {
   let cardNumber = 0;
   let cardsElement = document.querySelector(".cards-part");
-  let cardContent = `<div class="cards" aria-hidden="false">`;
+  let cardContent = `<div class="cards">`;
   for (let i = 0; i < flashcardItems.length; i++) {
     cardNumber += 1;
     let cardId = flashcardItems[i].id;

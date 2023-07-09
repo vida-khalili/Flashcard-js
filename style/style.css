@@ -39,7 +39,8 @@ p {
   top: 50px;
   width: 100%;
   position: relative;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid blue;
+  opacity: 0.3;
 }
 
 .notebook-content {
@@ -74,6 +75,8 @@ input {
   font-family: "Nanum Pen Script", cursive;
   font-size: 32px;
   background-color: transparent;
+  color: navy;
+  /* cursor: url("./../images/pen.ico"), default; */
 }
 
 .btn {
@@ -96,6 +99,20 @@ input {
 .submit-btn {
   height: 25px;
   color: #74dc2e;
+}
+
+.hint {
+  display: none;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: blue;
+  margin-top: 18px;
+}
+
+.hint img {
+  width: 15px;
+  height: 15px;
 }
 .cards {
   display: grid;
@@ -129,10 +146,29 @@ input {
   color: red;
 }
 .question {
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 0 16px;
 }
 
+.answer {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: fit-content;
+  max-width: 400px;
+  cursor: pointer;
+  filter: blur(5px);
+}
+.answer:hover {
+  filter: none;
+}
 .btn img {
   height: 25px;
   width: 25px;
+}
+
+.edit-form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

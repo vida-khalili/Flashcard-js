@@ -25,9 +25,9 @@ h1 {
 .notebook {
   top: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: grid;
-  min-height: 900px;
+  /* min-height: 900px; */
   position: absolute;
   grid-template-rows: repeat(auto-fit, 50px);
 }
